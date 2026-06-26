@@ -58,47 +58,6 @@
 </p>
 
 
-###  Game Development Journey
-
-> *"Building logic, games, and problem-solving skills — one line of code at a time."*
-
--  Currently working on exciting game projects
--  Solving complex game mechanics and physics
--  Learning industry-standard game engines (Unity, Unreal)
--  Goal: Create immersive and engaging gaming experiences
-
----
-
-### 🏅 Competitive Programming
-
--  **ICPC** Competitor — Tested skills against the best
--  Solved problems across various platforms
--  Passionate about algorithms, data structures, and optimization
--  Continuous learner — always pushing boundaries
-
----
-
-### 🌟 Extra-Curricular
-
-| Activity | Interest |
-|----------|----------|
-|  Chess | Strategic thinking & planning |
-|  Tennis | Agility & precision |
-|  Cricket | Teamwork & coordination |
-
----
-
-### UBEDIFY Institute
-
-**Co-founder** — Dedicated to revolutionizing education through:
-
--  Innovative learning methods
--  Skill development programs
--  Community empowerment
--  Making quality education accessible
-
----
-
 ###  Connect with Me
 
 <p align="left">
