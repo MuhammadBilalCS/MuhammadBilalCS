@@ -7,9 +7,26 @@
 
 ---
 
-###  About Me
+### 🚀 About Me
 
-<img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+<!-- ASCII Art Animation - Young Developer/Gamer -->
+<pre align="center">
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣶⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠛⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    
+     "Code. Create. Conquer."
+</pre>
 
 -  **BSCS Student** at **Institute of Business Administration (IBA)**
 -  **Aspiring Game Developer** — Building logic, games, and problem-solving skills
@@ -17,8 +34,17 @@
 -  **ICPC Participant** — Competed in prestigious programming contests
 -  **Co-founder** of **UBEDIFY Institute** — Empowering education through innovation
 -  Love playing **Chess**, **Tennis**, and **Cricket**
+-  Constantly learning and growing in the world of game development
 -  Reach me: **muhammad.bilal18251@gmail.com**
 
+
+---
+
+### 🎮 Animated Game Dev Quote
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=500&lines=Building+the+future%2C+one+game+at+a+time;Competitive+Programmer+%7C+ICPC+Participant;Game+Developer+in+the+making;Chess+%7C+Tennis+%7C+Cricket+Enthusiast" alt="Typing SVG" />
+</p>
 
 ---
 
@@ -92,7 +118,7 @@
 ### 🏅 Competitive Programming
 
 -  **ICPC** Competitor — Tested skills against the best
--  Solved 500+ problems across various platforms
+-  Solved problems across various platforms
 -  Passionate about algorithms, data structures, and optimization
 -  Continuous learner — always pushing boundaries
 
@@ -102,13 +128,13 @@
 
 | Activity | Interest |
 |----------|----------|
-|  Chess: Strategic thinking & planning |
-|  Tennis: Agility & precision |
-|  Cricket: Teamwork & coordination |
+|  Chess | Strategic thinking & planning |
+|  Tennis | Agility & precision |
+|  Cricket | Teamwork & coordination |
 
 ---
 
-###  UBEDIFY Institute
+### UBEDIFY Institute
 
 **Co-founder** — Dedicated to revolutionizing education through:
 
@@ -137,7 +163,6 @@
   <a href="https://medium.com/@muhammad.bilal18251">
     <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
   </a>
-  <!-- Add other social links here -->
 </p>
 
 ---
@@ -149,6 +174,14 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MuhammadBilalCS/MuhammadBilalCS/output/github-contribution-grid-snake.svg" />
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/MuhammadBilalCS/MuhammadBilalCS/output/github-contribution-grid-snake.svg" />
 </picture>
+
+---
+
+### 🎮 Animated Game Controller
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" alt="Git Header" width="100%"/>
+</p>
 
 ---
 
