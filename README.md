@@ -58,22 +58,6 @@
 </p>
 
 
-###  GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadBilalCS&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadBilalCS&theme=radical&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilalCS&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-</p>
-
----
-
 ###  Game Development Journey
 
 > *"Building logic, games, and problem-solving skills — one line of code at a time."*
@@ -160,6 +144,21 @@
 | **LeetCode** | <img src="https://leetcard.jacoblin.cool/muhammadbilal22?theme=dark&font=Baloo%202&ext=heatmap" alt="LeetCode Stats" /> |
 ---
 
+###  GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=MuhammadBilalCS&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MuhammadBilalCS&theme=radical&hide_border=true" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MuhammadBilalCS&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</p>
+
+---
 <p align="center">
   <i>“Building logic, games, and problem-solving skills — one line of code at a time.”</i>
 </p>
