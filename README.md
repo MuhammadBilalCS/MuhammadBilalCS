@@ -39,16 +39,6 @@
 
 ---
 
-### 🏆 Achievements
-
-<p align="left">
-  <img src="https://img.shields.io/badge/ICPC-FF6B6B?style=for-the-badge&logo=icpc&logoColor=white" alt="ICPC" />
-  <img src="https://img.shields.io/badge/Competitive%20Programming-00B4D8?style=for-the-badge&logo=codeforces&logoColor=white" alt="Competitive Programming" />
-  <img src="https://img.shields.io/badge/Co-founder-UBEDIFY-4CAF50?style=for-the-badge&logo=education&logoColor=white" alt="UBEDIFY" />
-</p>
-
----
-
 ###  Technologies & Tools
 
 <p align="left">
@@ -67,17 +57,6 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40"/>
 </p>
 
----
-
-###  Coding Profiles
-
-| Platform | Stats |
-|----------|-------|
-| **Codeforces** | <img src="https://cf-stats.sudipghimire.com.np/api?username=Bilalpanda_&show_rating=true&border_radius=5&bg_color=1a1a2e&text_color=ffffff&title_color=ff6b6b" alt="Codeforces Stats" /> |
-| **LeetCode** | <img src="https://leetcard.jacoblin.cool/muhammadbilal22?theme=dark&font=Baloo%202&ext=heatmap" alt="LeetCode Stats" /> |
-| **Medium** | <img src="https://github-readme-medium.vercel.app/?username=muhammad.bilal18251" alt="Medium Stats" /> |
-
----
 
 ###  GitHub Stats
 
@@ -174,6 +153,11 @@
   <img src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" alt="Git Header" width="100%"/>
 </p>
 
+###  Coding Profiles
+
+| Platform | Stats |
+|----------|-------|
+| **LeetCode** | <img src="https://leetcard.jacoblin.cool/muhammadbilal22?theme=dark&font=Baloo%202&ext=heatmap" alt="LeetCode Stats" /> |
 ---
 
 <p align="center">
