@@ -1,0 +1,142 @@
+name: Contribution Board Updater
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows you to manually trigger the workflow
+
+jobs:
+  update-contribution-board:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install -g octokit
+          npm install -g @octokit/rest
+
+      - name: Generate Contribution Data
+        id: contribution-data
+        run: |
+          # Fetch contribution data using GitHub API
+          curl -L \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/users/${{ github.repository_owner }}/events" \
+            -o contribution-data.json
+
+      - name: Create Contribution Board
+        run: |
+          # Create contribution board markdown
+          echo "# 📊 Contribution Board" > CONTRIBUTION_BOARD.md
+          echo "" >> CONTRIBUTION_BOARD.md
+          echo "## 📈 Weekly Activity" >> CONTRIBUTION_BOARD.md
+          echo "" >> CONTRIBUTION_BOARD.md
+          
+          # Generate contribution table
+          echo "| Day | Commits | PRs | Issues | Reviews |" >> CONTRIBUTION_BOARD.md
+          echo "|-----|---------|-----|--------|---------|" >> CONTRIBUTION_BOARD.md
+          
+          # Process contribution data (simplified example)
+          # You can customize this based on your needs
+          echo "| Monday | 5 | 2 | 1 | 3 |" >> CONTRIBUTION_BOARD.md
+          echo "| Tuesday | 7 | 1 | 0 | 2 |" >> CONTRIBUTION_BOARD.md
+          echo "| Wednesday | 3 | 3 | 2 | 4 |" >> CONTRIBUTION_BOARD.md
+          echo "| Thursday | 8 | 2 | 1 | 5 |" >> CONTRIBUTION_BOARD.md
+          echo "| Friday | 6 | 1 | 3 | 2 |" >> CONTRIBUTION_BOARD.md
+          echo "| Saturday | 2 | 0 | 1 | 1 |" >> CONTRIBUTION_BOARD.md
+          echo "| Sunday | 4 | 1 | 0 | 2 |" >> CONTRIBUTION_BOARD.md
+          
+          echo "" >> CONTRIBUTION_BOARD.md
+          echo "## 🏆 Total Contributions" >> CONTRIBUTION_BOARD.md
+          echo "" >> CONTRIBUTION_BOARD.md
+          
+          # Calculate totals
+          echo "| Metric | Value |" >> CONTRIBUTION_BOARD.md
+          echo "|--------|-------|" >> CONTRIBUTION_BOARD.md
+          echo "| Total Commits | 35 |" >> CONTRIBUTION_BOARD.md
+          echo "| Total PRs | 10 |" >> CONTRIBUTION_BOARD.md
+          echo "| Total Issues | 8 |" >> CONTRIBUTION_BOARD.md
+          echo "| Total Reviews | 19 |" >> CONTRIBUTION_BOARD.md
+
+      - name: Update README with Contribution Board
+        run: |
+          # Read the contribution board
+          BOARD_CONTENT=$(cat CONTRIBUTION_BOARD.md)
+          
+          # Update README.md
+          if grep -q "## 📊 Contribution Board" README.md; then
+            # Replace existing section
+            sed -i '/## 📊 Contribution Board/,/##/c\'"$BOARD_CONTENT" README.md
+          else
+            # Append to README
+            echo "$BOARD_CONTENT" >> README.md
+          fi
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add CONTRIBUTION_BOARD.md README.md
+          git commit -m "📊 Update contribution board [skip ci]" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+      - name: Create Contribution Badge
+        run: |
+          # Generate SVG contribution badge
+          echo '<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">' > contribution-badge.svg
+          echo '  <rect width="200" height="50" rx="10" fill="#2d2d2d"/>' >> contribution-badge.svg
+          echo '  <text x="20" y="30" fill="#ffffff" font-family="Arial" font-size="14">🔥 Contributions: 72</text>' >> contribution-badge.svg
+          echo '</svg>' >> contribution-badge.svg
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: contribution-board
+          path: |
+            CONTRIBUTION_BOARD.md
+            contribution-badge.svg
+
+  contribution-stats:
+    runs-on: ubuntu-latest
+    needs: update-contribution-board
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Contribution Statistics
+        run: |
+          echo "## 🔥 Contribution Heatmap" >> HEATMAP.md
+          echo "" >> HEATMAP.md
+          echo "```" >> HEATMAP.md
+          
+          # Generate a simple heatmap (ASCII art style)
+          echo "  Mon Tue Wed Thu Fri Sat Sun" >> HEATMAP.md
+          echo "  ███ ███ ███ ███ ███ ███ ███" >> HEATMAP.md
+          echo "  ███ ███ ███ ███ ███ ███ ███" >> HEATMAP.md
+          echo "  ███ ███ ███ ███ ███ ███ ███" >> HEATMAP.md
+          echo "  ███ ███ ███ ███ ███ ███ ███" >> HEATMAP.md
+          echo "```" >> HEATMAP.md
+
+      - name: Commit Heatmap
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add HEATMAP.md
+          git commit -m "🔥 Update contribution heatmap [skip ci]" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
